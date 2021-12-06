@@ -1,0 +1,178 @@
+@font-face {
+    font-family: "Lato light";
+    src: url(../fonts/Lato_light.ttf);
+}
+
+@font-face {
+    font-family: "Lato bolt";
+    src: url(../fonts/Lato_bolt.ttf);
+}
+
+@font-face {
+    font-family: "Lato black";
+    src: url(../fonts/Lato_black.ttf);
+}
+
+@font-face {
+    font-family: "Lato regular";
+    src: url(../fonts/Lato_regular.ttf);
+}
+
+.body {
+    font-family: 'Lato_light', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.header {
+    display: flex;
+    height: 109px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
+    border: 1px solid #ececec;
+    background-color: #ffffff;
+}
+
+.header {
+    height: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
+    border: 1px solid #ececec;
+    background-color: #ffffff;
+}
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #222222;
+    font-family: "Lato light", sans-serif;
+}
+
+.D {
+    font-family: "Lato black", sans-serif;
+    font-weight: bold;
+    color:#f16d7f;
+
+}
+
+.navbar {
+    left: 20px;
+}
+.catalog-sex {
+    font-weight: 600;
+    color: #222222;  
+}
+
+.btn-outline-success {
+    color: #f16d7f;
+    border-color: #f16d7f;
+}
+
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: #8e9290;
+    border-color: #fff;
+}
+
+.header-form {
+    display: flex;
+}
+
+.button-site {
+    background-color: #f16d7f;
+    padding: 12px 20px;
+    font-family: "Lato regular", sans-serif;
+}
+
+.my-acc {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 5px;
+    
+}
+.my-acc:hover {
+    color: #222222; 
+}
+
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.menu-link {
+    text-decoration: none;
+    display: block;
+    padding: 20px 25px;
+    color: #222222;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.menu li a:hover {
+    color: #f16d7f;
+}
+
+.banner-block {
+    height: 100%;
+    background: url(../img/banner.jpg) 0 -51px;
+}
+
+.banner {
+    height: 613px;
+    background-color: #e8e8e8;
+}
+
+.the-brand {
+    color: #222222;
+font-size: 60px;
+font-weight: 700;
+text-transform: uppercase;
+        line-height: 45px;
+    margin-bottom: 20px;
+}
+
+
+.text-fashion {
+    color: #222222;
+font-size: 40px;
+font-weight: 700;
+text-transform: uppercase;
+        line-height: 31px;
+
+}
+
+.banner-text {
+    margin-top: 224px;
+    border-left: 12px solid #f16d7f;
+    float: left;
+    padding-left: 12px;
+}
+
+.span-fashion {
+    color: #f16d7f;
+}
