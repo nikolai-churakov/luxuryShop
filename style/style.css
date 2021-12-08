@@ -4,6 +4,10 @@
 }
 
 @font-face {
+    font-family: "Lato regular";
+    src: url(../fonts/Lato_regular.ttf);
+}
+@font-face {
     font-family: "Lato bolt";
     src: url(../fonts/Lato_bolt.ttf);
 }
@@ -13,13 +17,8 @@
     src: url(../fonts/Lato_black.ttf);
 }
 
-@font-face {
-    font-family: "Lato regular";
-    src: url(../fonts/Lato_regular.ttf);
-}
-
 .body {
-    font-family: 'Lato_light', sans-serif;
+    font-family: "Lato light", sans-serif;
 }
 
 * {
@@ -67,23 +66,13 @@
 .D {
     font-family: "Lato black", sans-serif;
     font-weight: bold;
+    font-weight: 900;
     color:#f16d7f;
 }
 
 .catalog-sex {
     font-weight: 600;
     color: #222222;  
-}
-
-.btn-outline-success {
-    color: #f16d7f;
-    border-color: #f16d7f;
-}
-
-.btn-outline-success:hover {
-    color: #fff;
-    background-color: #8e9290;
-    border-color: #fff;
 }
 
 .header-form {
@@ -141,7 +130,7 @@
 
 .the-brand {
     color: #222222;
-font-size: 60px;
+font-size: 70px;
 font-weight: 700;
 text-transform: uppercase;
         line-height: 45px;
@@ -169,7 +158,6 @@ text-transform: uppercase;
     color: #f16d7f;
 }
 
-/* Style The Dropdown Button */
 .dropbtn {
     background-color: #f16d7f;
     color: white;
@@ -179,14 +167,10 @@ text-transform: uppercase;
     cursor: pointer;
 }
 
-/* The container <div> - needed to position the dropdown content */
 .dropdown {
-    position: relative;
     display: inline-block;
-    left: 20px;
 }
 
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -196,23 +180,52 @@ text-transform: uppercase;
     z-index: 1;
 }
 
-/* Links inside the dropdown */
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+.dropdown-content a:hover {
+    background-color: #f1f1f1
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
     background-color: #f16d7f;
+}
+
+.dropdown-menu li {
+    margin-top: 16px;
+    padding-left: 13px;
+    list-style-type: none;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+}
+
+.dropdown-menu li a {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0.35px;
+    color: #232323;
+    text-decoration: none;
+}
+
+.dropdown-menu:hover {
+    color: #f16d7f;
+}
+.browse-menu__caption {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    color: #232323;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+}
+
+.browse-menu-hr {
+    width: 150px;
+    height: 1px;
+    background-color: #e8e8e8;
+    margin: 0;
 }
