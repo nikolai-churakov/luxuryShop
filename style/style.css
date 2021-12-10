@@ -63,11 +63,99 @@
     font-family: "Lato light", sans-serif;
 }
 
+.bran {
+    font-family: "Lato light", sans-serif;
+    margin-left: 11px;
+    margin-top: -1px;
+    letter-spacing: 0.7px
+}
 .D {
     font-family: "Lato black", sans-serif;
     font-weight: bold;
     font-weight: 900;
     color:#f16d7f;
+}
+
+.dropbtn {
+    display: flex;
+    align-items: center;
+    height: 38px;
+    background-color: #f16d7f;
+    color: #222;
+    padding: 16px;
+    font-family: "Lato regular", sans-serif;
+    font-size: 14px;
+    border: none;
+    line-height: 2.29;
+    letter-spacing: 0.35px;
+}
+
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #f16d7f;
+}
+
+.dropdown-menu li {
+    margin-top: 16px;
+    padding-left: 13px;
+    list-style-type: none;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+}
+
+.dropdown-menu li a {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0.35px;
+    color: #232323;
+    text-decoration: none;
+}
+
+.dropdown-menu:hover {
+    color: #f16d7f;
+}
+.browse-menu__caption {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    color: #232323;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+}
+
+.browse-menu-hr {
+    width: 150px;
+    height: 1px;
+    background-color: #e8e8e8;
+    margin: 0;
+}
+
+.form-search {
+    font-family: "Lato light", sans-serif;
 }
 
 .catalog-sex {
@@ -77,6 +165,8 @@
 
 .header-form {
     display: flex;
+    margin-left: 36px;
+    height: 38px;
 }
 
 .button-site {
@@ -158,74 +248,64 @@ text-transform: uppercase;
     color: #f16d7f;
 }
 
-.dropbtn {
-    background-color: #f16d7f;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
+.things {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 97px;
 }
 
-.dropdown {
-    display: inline-block;
+.things-left {
+    margin-right: 20px;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+.things-left-up {
+    width: 560px;
+    height: 542px;
+    margin-bottom: 20px;
+    background: url(../img/ForMen.jpg) 1px 1px no-repeat;
 }
 
-.dropdown-content a:hover {
-    background-color: #f1f1f1
+.things-left-down {
+    width: 560px;
+    height: 262px;
+    background: url(../img/Accesories.jpg) 1px 1px no-repeat;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+.things-right-up {
+    width: 560px;
+    height: 261px;
+    margin-bottom: 20px;
+    background: url(../img/Women.jpg) 1px 1px no-repeat;
 }
 
-.dropdown:hover .dropbtn {
-    background-color: #f16d7f;
+.things-right-down {
+    width: 560px;
+    height: 542px;
+    background: url(../img/ForKids.jpg) 1px 1px no-repeat;
 }
 
-.dropdown-menu li {
-    margin-top: 16px;
-    padding-left: 13px;
-    list-style-type: none;
-    text-align: left;
-    font-family: 'Lato', sans-serif;
+.things-text {
+    padding: 0 16px 10px 0;
+    background-color: white;
+    margin-top: 27px;
+    float: left;
 }
 
-.dropdown-menu li a {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 28px;
-    letter-spacing: 0.35px;
-    color: #232323;
-    text-decoration: none;
+.things-text-up {
+    font-size: 18px;
+    font-weight: 900;
+    margin-left: 18px;
+    margin-top: 12px;
+    letter-spacing: 0.6px;
+    color: #222222;
 }
 
-.dropdown-menu:hover {
+.things-text-down {
+    font-size: 30px;
+    font-weight: 900;
+    margin-left: 18px;
+    margin-top: 2px;
+    letter-spacing: 1px;
     color: #f16d7f;
-}
-.browse-menu__caption {
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 0.4px;
-    color: #232323;
-    margin-top: 18px;
-    margin-bottom: 10px;
-    text-align: left;
-    font-family: 'Lato', sans-serif;
-}
-
-.browse-menu-hr {
-    width: 150px;
-    height: 1px;
-    background-color: #e8e8e8;
-    margin: 0;
 }
