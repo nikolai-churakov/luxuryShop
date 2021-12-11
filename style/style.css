@@ -309,3 +309,51 @@ text-transform: uppercase;
     letter-spacing: 1px;
     color: #f16d7f;
 }
+.conteinerFutureItem {
+    display: flex;
+    height: 211px;
+    align-items: center;
+    justify-content:center;
+}
+
+.future {
+    text-align: center;
+    margin-top: 48px;
+    font-family: "Lato bolt", sans-serif;
+    font-size: 30px;
+    letter-spacing: 0.75px;
+    line-height: 0.5;
+    color: #222;     
+}
+
+.futureText {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.3px;
+    color: #9f9f9f;
+}
+
+.fastThingBuy {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    background-color: #222;
+}
+
+.productWrap {
+    width: 262px;
+    height: 348px;
+    background-color: #fff;
+    box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.16);
+}
+
+
+.Shadow {
+    width: 263px;
+    height: 364px;
+    margin: 59px 31px 39px 3px;
+    padding: 0 0 21px;
+    box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.16);
+    background-color: #fff;
+  }
