@@ -346,14 +346,43 @@ text-transform: uppercase;
     height: 348px;
     background-color: #fff;
     box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.16);
+    margin-bottom: 20px;
 }
 
+.productImg {
+    width: 100%;
+}
 
-.Shadow {
-    width: 263px;
-    height: 364px;
-    margin: 59px 31px 39px 3px;
-    padding: 0 0 21px;
-    box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.16);
-    background-color: #fff;
-  }
+.nameAndPriceWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 45px;
+    margin-left: 20px;
+    box-sizing: border-box;
+}
+
+.productName {
+    margin-top: 13px;
+    font-family: "Lato regular", sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #222222;
+    overflow: hidden;
+    padding-right: 5px;
+    box-sizing: border-box;
+}
+
+.productPriceWrap {
+    margin-top: 12px;
+    font-family: "Roboto bolt", sans-serif;
+    color: #f16d7f;
+    text-align: right;
+    box-sizing: border-box;
+}
+
+.actualPrice {
+    font-size: 16px;
+    max-height: 25px;
+}
