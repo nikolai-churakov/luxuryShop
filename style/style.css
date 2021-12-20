@@ -361,9 +361,20 @@ text-transform: uppercase;
     width: 262px;
     height: 348px;
     background-color: #fff;
-    /* box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.16); */
     margin-bottom: 20px;
     position: relative;
+}
+
+.productWrap:hover {
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.16);
+}
+
+.productWrap:hover .productImg {
+filter: brightness(50%);
+}
+
+.productWrap:hover .box-add {
+    display: flex;
 }
 
 .box-add {
@@ -389,6 +400,11 @@ text-transform: uppercase;
     align-items: center;
 }
 
+.add:hover {
+    box-shadow: 0px 0px 10px white;
+}
+
+
 .basket1 {
     margin-right: 10px;
 }
@@ -396,18 +412,6 @@ text-transform: uppercase;
 .productImg {
     width: 100%;
     height: 280px;
-}
-
-.productWrap:hover {
-    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.16);
-}
-
-.productWrap:hover .productImg {
-filter: brightness(50%);
-}
-
-.productWrap:hover .box-add {
-    display: flex;
 }
 
 .nameAndPriceWrap {
@@ -442,4 +446,26 @@ filter: brightness(50%);
 .actualPrice {
     font-size: 16px;
     max-height: 25px;
+}
+
+.conteinerBrowseAllProduct {
+    display: flex;
+    height: 240px;
+    align-items: center;
+    justify-content:center;
+}
+
+.buttonBrowseAllProduct {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color: #f16d7f;
+    width: 212px;
+    height: 48px;
+    color: #FFFFFF;
+    font-family: "Lato bolt", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    text-decoration: none;
+
 }
