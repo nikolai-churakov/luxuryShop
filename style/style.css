@@ -29,9 +29,9 @@
 .header {
     display: flex;
     height: 109px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
-    border: 1px solid #ececec;
     background-color: #ffffff;
+    border: 1px solid #ececec;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
 }
 
 .container {
@@ -467,5 +467,109 @@ filter: brightness(50%);
     font-size: 14px;
     letter-spacing: 0.7px;
     text-decoration: none;
+}
 
+.container-offer {
+    display: flex;
+    justify-content:center;
+}
+
+.box-offer-left {
+    display: flex;
+    float: left;
+    width: 767px;
+    height: 529px;
+    position: relative;
+}
+
+.conteinerOffer {
+    height: 78px;
+    width: 310px;
+    position: absolute;
+    margin-top: 132px;
+    margin-left: 37px;
+}
+
+.pr {
+    font-family: "Lato bolt", sans-serif;
+    font-size: 54px;
+    letter-spacing: 1.35px;
+    color: #ffffff;     
+}
+
+.offer-text {
+    font-family: "Lato bolt", sans-serif;
+    font-size: 54px;
+    letter-spacing: 0.8px;
+    color: #f16d7f;    
+}
+
+.offer-women-text {
+    font-family: "Lato bolt", sans-serif;
+    font-size: 32px;
+    letter-spacing: 0.8px;
+    color: #ffffff;     
+}
+
+.box-offer-right {
+    display: flex;
+    float: right;
+    width: 373px;
+    height: 529px;
+    background-color: #222224;
+    position: relative;
+}
+
+.car {
+    position: absolute;
+    top: 49px;
+    left: 35px;
+}
+
+.percent {
+    position: absolute;
+    top: 205px;
+    left: 35px;
+}
+
+.crown {
+    position: absolute;
+    bottom: 135px;
+    left: 31px;
+}
+
+.offer-car {
+    position: absolute;
+    top: 52px;
+    left: 110px;
+}
+
+.offer-percent {
+    position: absolute;
+    top: 209px;
+    left: 111px;
+}
+
+.offer-crown {
+    position: absolute;
+    bottom: 58px;
+    left: 110px;
+}
+
+.free {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-left: 2px;
+    color: #fbfbfb;
+}
+
+.worldwide {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.35px;
+    margin-top: 10px;
+    color: #fbfbfb;
+    width: 230px;
 }
