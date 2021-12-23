@@ -573,3 +573,77 @@ filter: brightness(50%);
     color: #fbfbfb;
     width: 230px;
 }
+
+.subscribe {
+    height: 438px;
+    max-width: 1608px;
+    margin: 0 auto;
+    margin-top: 98px;
+    background: url(../img/background-subscribe.jpg) no-repeat;
+    display: flex;
+    justify-content:center
+}
+
+.container-subscribe-left {
+    height: 100%;
+    width: 808px;
+    position: relative;
+}
+
+.container-subscribe-right {
+    height: 100%;
+    width: 800px;
+    background-color: red;
+}
+
+.burhan-ava {
+    position: absolute;
+    top: 111px;
+    left: 230px;
+}
+
+.subscribe-text {
+    /* margin-top: 224px;
+    border-left: 12px solid #f16d7f;
+    float: left;
+    padding-left: 12px; */
+    position: absolute;
+    top: 113px;
+    left: 342px;
+} 
+    
+.Vestibulum {
+    color: #222224;
+    font-family: "Lato light";
+    font-weight: normal;
+    font-stretch: normal;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.63;
+    letter-spacing: 0.4px;
+    text-align: left;
+
+        margin-bottom: 20px;
+    width: 386px;
+    height: 68px;
+}
+
+.Vestibulum-id {
+    line-height: 31px;
+    font-family: "Lato regular", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #f16d7f;
+}
+
+.Vestibulum-location {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.17;
+    letter-spacing: 0.3px;
+    color: #222224;
+}
