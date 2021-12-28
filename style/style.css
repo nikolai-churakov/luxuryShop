@@ -584,37 +584,39 @@ filter: brightness(50%);
     justify-content:center
 }
 
-.container-subscribe-left {
+.subscribe-container {
+    width: 1140px;
+    display: flex; 
+    justify-content: center;
+}
+
+.subscribe-container-left {
     height: 100%;
-    width: 808px;
+    width: 570px;
     position: relative;
 }
 
-.container-subscribe-right {
+.subscribe-container-right {
     height: 100%;
-    width: 800px;
-    background-color: red;
+    width: 570px;
+    position: relative;
 }
 
 .burhan-ava {
     position: absolute;
-    top: 111px;
-    left: 230px;
+    top: 124px;
+    left: 2px;
 }
 
 .subscribe-text {
-    /* margin-top: 224px;
-    border-left: 12px solid #f16d7f;
-    float: left;
-    padding-left: 12px; */
     position: absolute;
-    top: 113px;
-    left: 342px;
+    top: 124px;
+    left: 100px;
 } 
     
 .Vestibulum {
     color: #222224;
-    font-family: "Lato light";
+    font-family: "Lato light", sans-serif;
     font-weight: normal;
     font-stretch: normal;
     font-size: 16px;
@@ -622,8 +624,7 @@ filter: brightness(50%);
     line-height: 1.63;
     letter-spacing: 0.4px;
     text-align: left;
-
-        margin-bottom: 20px;
+    margin-bottom: 20px;
     width: 386px;
     height: 68px;
 }
@@ -647,3 +648,90 @@ filter: brightness(50%);
     letter-spacing: 0.3px;
     color: #222224;
 }
+
+.container-subscriber-right {
+    height: 100%;
+    width: 570px;
+    position: relative;
+}
+
+.sub {
+    position: absolute;
+    top: 150px;
+    left: 218px;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    font-family: "Lato regular", sans-serif;
+    color: #222224;
+}
+
+.newletter {
+    position: absolute;
+    top: 190px;
+    left: 145px;
+    font-family: "Lato regular", sans-serif;
+    letter-spacing: 0.35px;
+    font-size: 14px;
+}
+
+.subscribe-container-right-input {
+    position: absolute;
+    top: 224px;
+    left: 92px;
+    width: 233px;
+    height: 46px;
+    border-radius: 23px 0 0 23px;
+    background-color: #e1e1e1;
+    letter-spacing: 0.5px;
+    padding-left: 29px;
+    padding-right: 20px;
+    border: 0;
+    font-family: "Lato regular", sans-serif;
+}
+
+.subscribe-container-right-input:focus {
+    outline: none;
+}
+
+.subscribe-container-right-search {
+    position: absolute;
+    top: 224px;
+    left: 374px;
+    width: 104px;
+    height: 46px;
+    border-radius: 0 23px 23px 0;
+    border: 1px solid #f16d7f;
+    background-color: #f16d7f;
+    color: white;
+    outline: none;
+    font-family: "Lato regular", sans-serif;
+}
+
+.subscribe-container-right-search:hover {
+    background-color: white;
+    color: #f16d7f;
+}
+
+.conteiner-companyInfo {
+    margin: 0 auto;
+    height: 460px;
+
+}
+
+.conteiner-companyInfo-24 {
+    width: 1140px;
+    height: inherit;
+    display: flex;
+    justify-content:center;
+}
+
+.subscribe {
+    height: 438px;
+    max-width: 1608px;
+    margin: 0 auto;
+    margin-top: 98px;
+    background: url(../img/background-subscribe.jpg) no-repeat;
+    
+}
+
