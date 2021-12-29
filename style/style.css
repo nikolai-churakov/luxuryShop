@@ -67,13 +67,15 @@
     font-family: "Lato light", sans-serif;
     margin-left: 11px;
     margin-top: -1px;
-    letter-spacing: 0.7px
+    letter-spacing: 0.7px;
+    font-size: 27px;
 }
 .D {
     font-family: "Lato black", sans-serif;
     font-weight: bold;
     font-weight: 900;
     color:#f16d7f;
+    font-size: 27px;
 }
 
 .dropButton {
@@ -582,7 +584,7 @@ filter: brightness(50%);
     background: url(../img/background-subscribe.jpg) no-repeat;
     display: flex;
     justify-content:center
-}
+    }
 
 .subscribe-container {
     width: 1140px;
@@ -716,22 +718,47 @@ filter: brightness(50%);
 .conteiner-companyInfo {
     margin: 0 auto;
     height: 460px;
-
+    width: 1140px;
+    display: flex;
 }
 
 .conteiner-companyInfo-24 {
-    width: 1140px;
-    height: inherit;
+    width: 430px;
     display: flex;
-    justify-content:center;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.subscribe {
-    height: 438px;
-    max-width: 1608px;
-    margin: 0 auto;
-    margin-top: 98px;
-    background: url(../img/background-subscribe.jpg) no-repeat;
-    
+.objectively {
+    font-family: "Lato light", sans-serif;
+    margin-top: 22px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.35px;
+    color: #898989;
+}
+.conteiner-companyInfo-nav {
+    width: 680px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
+.conteiner-companyInfo-nav-colm {
+    display: flex; 
+    flex-direction: column; 
+}
+
+.conteiner-companyInfo-nav-colm-list {
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.a-block {
+display: block;
+text-decoration: none;
+font-family: 'Lato', sans-serif;  
+}
