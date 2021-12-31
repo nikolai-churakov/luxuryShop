@@ -20,15 +20,16 @@
 * {
     margin: 0px;
     padding: 0px;
+	--BrandPink: #f16d7f;
 }
 
 .body {
-    font-family: "Lato light", sans-serif;
+    font-family: "Lato regular", sans-serif;
 }
 
 .header {
     display: flex;
-    height: 109px;
+    height: 100px;
     background-color: #ffffff;
     border: 1px solid #ececec;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
@@ -55,25 +56,23 @@
     align-items: center;
 }
 
-.logo {
+.site-logo {
     display: flex;
     align-items: center;
-    font-family: "Lato light", sans-serif;
-    color: #222222;
-    text-decoration: none;
 }
 
 .bran {
     font-family: "Lato light", sans-serif;
+    letter-spacing: 0.7px;
+    font-size: 27px;
     margin-left: 11px;
     margin-top: -1px;
-    letter-spacing: 0.7px
 }
+
 .D {
     font-family: "Lato black", sans-serif;
-    font-weight: bold;
-    font-weight: 900;
-    color:#f16d7f;
+    font-size: 27px;
+    color: var(--BrandPink);
 }
 
 .dropButton {
@@ -94,12 +93,12 @@
     display: flex;
     align-items: center;
     height: 38px;
+    border: none;
     border-radius: 0 5px 5px 0;
     color: #222;
     padding: 16px;
     font-family: "Lato regular", sans-serif;
     font-size: 14px;
-    border: none;
     line-height: 2.29;
     letter-spacing: 0.35px;
 }
@@ -126,7 +125,7 @@
 }
 
 .dropdown:hover .dropbtn {
-    background-color: #f16d7f;
+    background-color: var(--BrandPink);
 }
 
 .dropdown-menu li {
@@ -147,7 +146,7 @@
 }
 
 .dropdown-menu:hover {
-    color: #f16d7f;
+    color: var(--BrandPink);
 }
 .browse-menu__caption {
     font-size: 16px;
@@ -169,6 +168,7 @@
 
 .form-search {
     font-family: "Lato light", sans-serif;
+    width: 280px;
     border-color: none;
     border: 1px solid #e6e6e6;
     color: #a4a4a4;
@@ -186,21 +186,30 @@
 }
 
 .button-site {
-    background-color: #f16d7f;
-    padding: 12px 20px;
+    background-color: var(--BrandPink);
     font-family: "Lato regular", sans-serif;
+    color: #fff;
+    border: 1px solid var(--BrandPink);
+    outline: none;
+    transition: color 0.6s;
 }
 
-.my-acc {
-    color: #ffffff;
+.my-account-button {
+    height: 38px;
+    width: 110px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
     font-size: 15px;
-    font-weight: 400;
     text-decoration: none;
     border-radius: 5px;
-    
+    line-height: 2.13;
+    letter-spacing: 0.38px;    
 }
-.my-acc:hover {
-    color: #222222; 
+
+.my-account-button:hover {
+    background-color: #fff;
+    color: var(--BrandPink);
 }
 
 
@@ -211,17 +220,18 @@
 }
 
 .menu-link {
-    text-decoration: none;
     display: block;
-    padding: 20px 25px;
+    font-family: 'Lato bolt';
     color: #222222;
+    text-decoration: none;
+    padding: 17px 25px;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
 }
 
 .menu li a:hover {
-    color: #f16d7f;
+    color: var(--BrandPink);
 }
 
 .banner-block {
@@ -255,13 +265,13 @@ text-transform: uppercase;
 
 .banner-text {
     margin-top: 224px;
-    border-left: 12px solid #f16d7f;
+    border-left: 12px solid var(--BrandPink);
     float: left;
     padding-left: 12px;
 }
 
 .span-fashion {
-    color: #f16d7f;
+    color: var(--BrandPink);
 }
 
 .things {
@@ -323,7 +333,7 @@ text-transform: uppercase;
     margin-left: 18px;
     margin-top: 2px;
     letter-spacing: 1px;
-    color: #f16d7f;
+    color: var(--BrandPink);
 }
 .conteinerFutureItem {
     display: flex;
@@ -391,7 +401,7 @@ filter: brightness(50%);
     padding: 8px 12px;
     text-decoration: none;
     position: absolute;
-    color: #FFFFFF;
+    color: #FFF;
     position: absolute;
     font-size: 14px;
     font-family: "Lato light", sans-serif;
@@ -405,8 +415,27 @@ filter: brightness(50%);
 }
 
 
-.basket1 {
-    margin-right: 10px;
+.basket {
+    margin-right: 25px;
+}
+
+.circle {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    top: -10px;
+    left: 40px;
+    background: var(--BrandPink);
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    z-index: 1;
+    font-family: "Lato light", sans-serif;
+    font-size: 14px;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content:center
+
 }
 
 .productImg {
@@ -438,7 +467,7 @@ filter: brightness(50%);
 .productPriceWrap {
     margin-top: 12px;
     font-family: "Roboto bolt", sans-serif;
-    color: #f16d7f;
+    color: var(--BrandPink);
     text-align: right;
     box-sizing: border-box;
 }
@@ -459,14 +488,19 @@ filter: brightness(50%);
     display: flex;
     align-items: center;
     justify-content:center;
-    background-color: #f16d7f;
+    background-color: var(--BrandPink);
     width: 212px;
     height: 48px;
-    color: #FFFFFF;
+    color: #FFF;
     font-family: "Lato bolt", sans-serif;
     font-size: 14px;
     letter-spacing: 0.7px;
     text-decoration: none;
+}
+
+.buttonBrowseAllProduct:hover {
+    background-color: #fff;
+    color: var(--BrandPink);
 }
 
 .container-offer {
@@ -501,7 +535,7 @@ filter: brightness(50%);
     font-family: "Lato bolt", sans-serif;
     font-size: 54px;
     letter-spacing: 0.8px;
-    color: #f16d7f;    
+    color: var(--BrandPink);    
 }
 
 .offer-women-text {
@@ -573,3 +607,195 @@ filter: brightness(50%);
     color: #fbfbfb;
     width: 230px;
 }
+
+.subscribe {
+    height: 438px;
+    max-width: 1608px;
+    margin: 0 auto;
+    margin-top: 98px;
+    background: url(../img/background-subscribe.jpg) no-repeat;
+    display: flex;
+    justify-content:center
+    }
+
+.subscribe-container {
+    width: 1140px;
+    display: flex; 
+    justify-content: center;
+}
+
+.subscribe-container-left {
+    height: 100%;
+    width: 570px;
+    position: relative;
+}
+
+.subscribe-container-right {
+    height: 100%;
+    width: 570px;
+    position: relative;
+}
+
+.burhan-ava {
+    position: absolute;
+    top: 124px;
+    left: 2px;
+}
+
+.subscribe-text {
+    position: absolute;
+    top: 124px;
+    left: 100px;
+} 
+    
+.Vestibulum {
+    color: #222224;
+    font-family: "Lato light", sans-serif;
+    font-weight: normal;
+    font-stretch: normal;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.63;
+    letter-spacing: 0.4px;
+    text-align: left;
+    margin-bottom: 20px;
+    width: 386px;
+    height: 68px;
+}
+
+.Vestibulum-id {
+    line-height: 31px;
+    font-family: "Lato regular", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: var(--BrandPink);
+}
+
+.Vestibulum-location {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.17;
+    letter-spacing: 0.3px;
+    color: #222224;
+}
+
+.container-subscriber-right {
+    height: 100%;
+    width: 570px;
+    position: relative;
+}
+
+.sub {
+    position: absolute;
+    top: 150px;
+    left: 218px;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    font-family: "Lato regular", sans-serif;
+    color: #222224;
+}
+
+.newletter {
+    position: absolute;
+    top: 190px;
+    left: 145px;
+    font-family: "Lato regular", sans-serif;
+    letter-spacing: 0.35px;
+    font-size: 14px;
+}
+
+.subscribe-container-right-input {
+    position: absolute;
+    top: 224px;
+    left: 92px;
+    width: 233px;
+    height: 46px;
+    border-radius: 23px 0 0 23px;
+    background-color: #e1e1e1;
+    letter-spacing: 0.5px;
+    padding-left: 29px;
+    padding-right: 20px;
+    border: 0;
+    font-family: "Lato regular", sans-serif;
+}
+
+.subscribe-container-right-input:focus {
+    outline: none;
+}
+
+.subscribe-container-right-search {
+    position: absolute;
+    top: 224px;
+    left: 374px;
+    width: 104px;
+    height: 46px;
+    border-radius: 0 23px 23px 0;
+    border: 1px solid var(--BrandPink);
+    background-color: var(--BrandPink);
+    color: #fff;
+    outline: none;
+    font-family: "Lato regular", sans-serif;
+}
+
+.subscribe-container-right-search:hover {
+    background-color:#fff;
+    color: var(--BrandPink);
+}
+
+.conteiner-companyInfo {
+    margin: 0 auto;
+    height: 460px;
+    width: 1140px;
+    display: flex;
+}
+
+.conteiner-companyInfo-24 {
+    width: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.objectively {
+    font-family: "Lato light", sans-serif;
+    margin-top: 22px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.35px;
+    color: #898989;
+}
+.conteiner-companyInfo-nav {
+    width: 680px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.conteiner-companyInfo-nav-colm {
+    display: flex; 
+    flex-direction: column; 
+}
+
+.conteiner-companyInfo-nav-colm-list {
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.a-block {
+margin-top: 10px;
+display: block;
+text-decoration: none;
+font-family: 'Lato', sans-serif;  
+}
+
+.box-offer-left:hover .offer-img {
+filter: brightness(130%);
+} 
