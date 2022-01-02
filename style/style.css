@@ -111,7 +111,8 @@
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: 262px;
+    min-height: 530px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -128,39 +129,42 @@
     background-color: var(--BrandPink);
 }
 
+.dropdown-content {
+    padding-bottom: 15px;
+}
+
 .dropdown-menu li {
     margin-top: 16px;
     padding-left: 13px;
     list-style-type: none;
     text-align: left;
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato regular", sans-serif;
 }
 
 .dropdown-menu li a {
     font-size: 14px;
-    font-weight: 300;
-    line-height: 28px;
     letter-spacing: 0.35px;
     color: #232323;
     text-decoration: none;
+    margin-left: 20px;
 }
 
-.dropdown-menu:hover {
+.dropdown-menu li a:hover {
     color: var(--BrandPink);
 }
-.browse-menu__caption {
+
+.browse-menuCaption {
+    font-family: "Lato bolt", sans-serif;
     font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.35px;
+    line-height: 2.29;
     color: #232323;
-    margin-top: 18px;
-    margin-bottom: 10px;
     text-align: left;
-    font-family: 'Lato', sans-serif;
+    margin: 10px 0px 10px 15px;
 }
 
 .browse-menu-hr {
-    width: 150px;
+    width: 262px;
     height: 1px;
     background-color: #e8e8e8;
     margin: 0;
