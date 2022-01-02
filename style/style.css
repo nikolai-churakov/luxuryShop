@@ -30,7 +30,7 @@
 .header {
     display: flex;
     height: 100px;
-    background-color: #ffffff;
+    background-color: #fff;
     border: 1px solid #ececec;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
 }
@@ -115,10 +115,6 @@
     min-height: 530px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-}
-
-.dropdown-content a:hover {
-    background-color: #f1f1f1
 }
 
 .dropdown:hover .dropdown-content {
@@ -250,21 +246,20 @@
 
 .the-brand {
     color: #222222;
-font-size: 70px;
-font-weight: 700;
-text-transform: uppercase;
-        line-height: 45px;
+    font-size: 70px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 45px;
     margin-bottom: 20px;
 }
 
 
 .text-fashion {
     color: #222222;
-font-size: 40px;
-font-weight: 700;
-text-transform: uppercase;
-        line-height: 31px;
-
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 31px;
 }
 
 .banner-text {
@@ -279,8 +274,6 @@ text-transform: uppercase;
 }
 
 .things {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin-top: 97px;
 }
@@ -368,7 +361,6 @@ text-transform: uppercase;
     display: flex;
     flex-flow: wrap;
     justify-content: space-between;
-    /* background-color: #222; */
 } 
 
 .productWrap {
@@ -438,8 +430,7 @@ filter: brightness(50%);
     color: #FFF;
     display: flex;
     align-items: center;
-    justify-content:center
-
+    justify-content:center;
 }
 
 .productImg {
@@ -620,7 +611,7 @@ filter: brightness(50%);
     background: url(../img/background-subscribe.jpg) no-repeat;
     display: flex;
     justify-content:center
-    }
+}
 
 .subscribe-container {
     width: 1140px;
@@ -801,15 +792,15 @@ filter: brightness(50%);
 }
 
 .a-block {
-margin-top: 10px;
-display: block;
-text-decoration: none;
-font-family: 'Lato', sans-serif;  
-color: #898989;
+    margin-top: 10px;
+    display: block;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;  
+    color: #898989;
 }
 
 .box-offer-left:hover .offer-img {
-filter: brightness(130%);
+    filter: brightness(130%);
 } 
 
 .companyInfo-title {
@@ -818,6 +809,7 @@ filter: brightness(130%);
     color: var(--BrandPink);
     margin-bottom: 13px;
 }
+
 .footer-container {
     background-color: #e6e6e6;
     width: 1618px;
@@ -846,16 +838,11 @@ filter: brightness(130%);
     letter-spacing: 0.4px;
 }
 
-/* .socialBar {
-    padding: 2px
-} */
-
 .socialBar:hover .social-ico {
     background-color: var(--BrandPink);
-    } 
+} 
 
 .social-ico {
     background-color: #fff;
     margin: 0px 2px;
 }
-
