@@ -676,6 +676,7 @@ filter: brightness(50%);
 }
 
 .Vestibulum-location {
+    font-family: "Lato regular", sans-serif;
     font-size: 12px;
     font-weight: 300;
     line-height: 1.17;
@@ -759,6 +760,12 @@ filter: brightness(50%);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-decoration: none;
+}
+
+.conteiner-companyInfo-24-brand {
+    display: flex;
+    align-items: center;
 }
 
 .objectively {
@@ -771,7 +778,7 @@ filter: brightness(50%);
     color: #898989;
 }
 .conteiner-companyInfo-nav {
-    width: 680px;
+    width: 710px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -794,8 +801,57 @@ margin-top: 10px;
 display: block;
 text-decoration: none;
 font-family: 'Lato', sans-serif;  
+color: #898989;
 }
 
 .box-offer-left:hover .offer-img {
 filter: brightness(130%);
 } 
+
+.companyInfo-title {
+    font-family: "Lato black", sans-serif;
+    font-size: 27px;
+    color: var(--BrandPink);
+    margin-bottom: 13px;
+}
+.footer-container {
+    background-color: #e6e6e6;
+    width: 1618px;
+    height: 79px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:center
+}
+
+.footer-container-box {
+    width: 1140px;
+    height: 100%;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-text {
+    color: #7a7a7a;
+    font-family: "Lato regular", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.63;
+    letter-spacing: 0.4px;
+}
+
+/* .socialBar {
+    padding: 2px
+} */
+
+.socialBar:hover .social-ico {
+    background-color: var(--BrandPink);
+    } 
+
+.social-ico {
+    background-color: #fff;
+    margin: 0px 2px;
+}
+
