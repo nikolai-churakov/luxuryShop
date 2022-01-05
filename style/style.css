@@ -8,7 +8,7 @@
     src: url(../fonts/Lato_regular.ttf);
 }
 @font-face {
-    font-family: "Lato bolt";
+    font-family: "Lato bolt"; 
     src: url(../fonts/Lato_bolt.ttf);
 }
 
@@ -38,6 +38,7 @@
 .container {
     width: 1140px;
     margin: 0 auto;
+    position: relative;
 }
 
 .header-flex {
@@ -54,6 +55,7 @@
 .header-right {
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .site-logo {
@@ -66,13 +68,15 @@
     letter-spacing: 0.7px;
     font-size: 27px;
     margin-left: 11px;
-    margin-top: -1px;
+    margin-top: 5px;
 }
 
 .D {
-    font-family: "Lato black", sans-serif;
+    font-family: "Lato light", sans-serif;
+    font-weight: bold;
     font-size: 27px;
     color: var(--BrandPink);
+    margin-top: 5px;
 }
 
 .dropButton {
@@ -87,6 +91,8 @@
     border: none;
     line-height: 2.29;
     letter-spacing: 0.35px;
+    position: relative;
+    cursor: pointer;
 }
 
 .dropSearch {
@@ -101,6 +107,7 @@
     font-size: 14px;
     line-height: 2.29;
     letter-spacing: 0.35px;
+    cursor: pointer;
 }
 
 .dropdown {
@@ -110,11 +117,27 @@
 .dropdown-content {
     display: none;
     position: absolute;
+    top: 69px;
     background-color: #f9f9f9;
     min-width: 262px;
     min-height: 530px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+}
+
+.dropdown-content::before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-top: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+    position: absolute;
+    background-color: #f9f9f9;
+    top: -6px;
+    left: 20px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -149,9 +172,9 @@
     color: var(--BrandPink);
 }
 
-.browse-menuCaption {
+.browse-menu-caption {
     font-family: "Lato bolt", sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 0.35px;
     line-height: 2.29;
     color: #232323;
@@ -167,11 +190,16 @@
 }
 
 .form-search {
-    font-family: "Lato light", sans-serif;
+    font-family: "Lato regular", sans-serif;
     width: 280px;
     border-color: none;
     border: 1px solid #e6e6e6;
-    color: #a4a4a4;
+    color:black;
+    padding-left: 10px;
+    padding-right: 10px;
+    letter-spacing: 0.75px;
+}
+    
 }
 
 .catalog-sex {
@@ -436,6 +464,10 @@ filter: brightness(50%);
 .productImg {
     width: 100%;
     height: 280px;
+}
+
+.no-decoration {
+    text-decoration: none;
 }
 
 .nameAndPriceWrap {
@@ -735,6 +767,7 @@ filter: brightness(50%);
     background-color: var(--BrandPink);
     color: #fff;
     outline: none;
+    cursor: pointer;
     font-family: "Lato regular", sans-serif;
 }
 
@@ -772,6 +805,25 @@ filter: brightness(50%);
     letter-spacing: 0.35px;
     color: #898989;
 }
+
+.subscriber-feedbackSwitch {
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+    position: absolute;
+    top: 165px;
+    left: 15px;
+}
+
+.subscriber-feedbackSwitch-link {
+    width: 38px;
+    height: 4px;
+    background-color: #d6d6d6;
+}
+
+.subscriber-feedbackSwitch-link:hover {
+    background-color: var(--BrandPink);
+}
 .conteiner-companyInfo-nav {
     width: 710px;
     display: flex;
@@ -797,6 +849,10 @@ filter: brightness(50%);
     text-decoration: none;
     font-family: 'Lato', sans-serif;  
     color: #898989;
+}
+
+.a-block:hover {
+    color: var(--BrandPink);
 }
 
 .box-offer-left:hover .offer-img {
@@ -838,11 +894,171 @@ filter: brightness(50%);
     letter-spacing: 0.4px;
 }
 
-.socialBar:hover .social-ico {
-    background-color: var(--BrandPink);
-} 
-
 .social-ico {
     background-color: #fff;
     margin: 0px 2px;
+}
+
+.socialBar:hover .social-ico {
+    background-color: var(--BrandPink);
+    cursor: pointer;
+} 
+
+.mega-box {
+    position: absolute;
+    border-radius: 5px;
+    padding: 20px;
+    border: 1px solid #e6e6e6;
+    background-color: #ffffff;
+    top: 42px;
+    left: 165px;
+    transition: all .3s;
+    display: none;
+    z-index: 1;
+}
+
+.mega-box-singlpage {
+    z-index: 1;
+}
+
+.mega-box::before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-top: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+    position: absolute;
+    background-color: #ffffff;
+    top: -7px;
+    left: 141px;
+}
+
+.menu li:hover .mega-box {
+    display: flex;
+    z-index: 1;
+}
+
+.mega-flex:last-child {
+    margin-right: 0;
+}
+
+.mega-box-caption {
+    font-size: 14px;
+    font-weight: 700;
+    color: #232323;
+    text-transform: uppercase;
+    letter-spacing: 0.35px;
+    border-bottom: 1px solid #e8e8e8;
+    width: 235px;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+
+.mega-box-caption-down {
+    margin-top: 37px;
+}
+
+.mega-menu {
+    list-style-type: none;
+}
+
+.mega-menu-li {
+    color: #646464;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.35px;
+    text-decoration: none;
+}
+
+.mega-menu-li:hover {
+    color: #f16d7f;
+}
+
+.basket-fastInfo {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: -30px;
+    width: 262px;
+    justify-content: center;
+    border-radius: 5px;
+    padding-bottom: 21px;
+    border: 1px solid #e6e6e6;
+    background-color: #fff;
+    z-index: 1;
+    transition: all .3s ease;
+}
+
+.asdcircle:hover .basket-fastInfo {
+    display: flex;
+}
+
+.basket-fastInfo ::before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-top: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+    position: absolute;
+    background-color: #ffffff;
+    top: -7px;
+    left: 57px;
+}
+
+.basket-fastInfo-box-total {
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 19px;
+    margin-bottom: 21px;
+}
+
+.basket-fastInfo-box_text1 {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+}
+
+.basket-fastInfo-box_text2 {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+}
+
+.basket-fastInfo-box-button {
+    width: 224px;
+    height: 50px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #4a4a4a;
+    margin-top: 11px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+}
+
+.basket-fastInfo-box-button:hover {
+    border-color: var(--BrandPink);
+    color: var(--BrandPink);
+}
+
+.priduct-in-basket {
+    width: 230px;
+    height: 115px;
+    margin: 10px 0px;
+    background-color: mediumseagreen
 }
