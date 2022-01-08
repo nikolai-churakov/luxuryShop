@@ -115,14 +115,21 @@
 }
 
 .dropdown-content {
-    display: none;
+    display: block;
     position: absolute;
-    top: 69px;
+    top: 78px;
     background-color: #f9f9f9;
     min-width: 262px;
     min-height: 530px;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition-property: opacity, visibility;
+    transition-duration: 0.2s;
+    transition-delay: 0.15s;
 }
 
 .dropdown-content::before {
@@ -136,12 +143,13 @@
     border-left: 1px solid #e6e6e6;
     position: absolute;
     background-color: #f9f9f9;
-    top: -6px;
+    top: -7px;
     left: 20px;
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+    opacity: 1;
+    visibility: visible
 }
 
 .dropdown:hover .dropbtn {
@@ -198,8 +206,6 @@
     padding-left: 10px;
     padding-right: 10px;
     letter-spacing: 0.75px;
-}
-    
 }
 
 .catalog-sex {
@@ -913,8 +919,13 @@ filter: brightness(50%);
     top: 42px;
     left: 165px;
     transition: all .3s;
-    display: none;
+    display: flex;
     z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition-property: opacity, visibility;
+    transition-duration: 0.2s;
+    transition-delay: 0.15s;
 }
 
 .mega-box-singlpage {
@@ -937,8 +948,8 @@ filter: brightness(50%);
 }
 
 .menu li:hover .mega-box {
-    display: flex;
-    z-index: 1;
+    opacity: 1;
+    visibility: visible;
 }
 
 .mega-flex:last-child {
@@ -979,7 +990,7 @@ filter: brightness(50%);
 }
 
 .basket-fastInfo {
-    display: none;
+    display: flex;
     position: absolute;
     top: 80px;
     left: -30px;
@@ -990,11 +1001,17 @@ filter: brightness(50%);
     border: 1px solid #e6e6e6;
     background-color: #fff;
     z-index: 1;
-    transition: all .3s ease;
+    opacity: 0;
+    visibility: hidden;
+    transition-property: opacity, visibility;
+    transition-duration: 0.2s;
+    transition-delay: 0.15s;
+    
 }
 
-.asdcircle:hover .basket-fastInfo {
-    display: flex;
+.container-basket-fastInfo:hover .basket-fastInfo {
+    opacity: 1;
+    visibility: visible;
 }
 
 .basket-fastInfo ::before {
