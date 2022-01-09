@@ -593,16 +593,31 @@ filter: brightness(50%);
     left: 35px;
 }
 
+.car-pr {
+    position: relative;
+    left: 40%;
+}
+
 .percent {
     position: absolute;
     top: 205px;
     left: 35px;
 }
 
+.percent-pr {
+    position: relative;
+    left: 40%;
+}
+
 .crown {
     position: absolute;
     bottom: 135px;
     left: 31px;
+}
+
+.crown-pr {
+    position: relative;
+    left: 40%;
 }
 
 .offer-car {
@@ -631,6 +646,16 @@ filter: brightness(50%);
     color: #fbfbfb;
 }
 
+.free-pr {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-left: 2px;
+    color: #fbfbfb;
+    display: flex;
+    justify-content: center;
+}
+
 .worldwide {
     font-size: 14px;
     font-weight: 300;
@@ -639,6 +664,16 @@ filter: brightness(50%);
     margin-top: 10px;
     color: #fbfbfb;
     width: 230px;
+}
+
+.worldwide-pr {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.35px;
+    margin-top: 10px;
+    color: #fbfbfb;
+    width: 308px;
 }
 
 .subscribe {
@@ -1078,4 +1113,20 @@ filter: brightness(50%);
     height: 115px;
     margin: 10px 0px;
     background-color: mediumseagreen
+}
+
+.box-offer-products {
+    display: flex;
+    justify-content: center;
+    width: 1600px;
+    height: 341px;
+    background-color: #222224;
+}
+
+.box-offer-products-center {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    width: 1140px;
+    height: inherit;
 }
