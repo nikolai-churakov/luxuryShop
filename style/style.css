@@ -688,6 +688,10 @@ filter: brightness(50%);
     justify-content:center
 }
 
+.subscribe-pr {
+    margin-top: 0px;
+}
+
 .subscribe-container {
     width: 1140px;
     display: flex; 
@@ -709,13 +713,13 @@ filter: brightness(50%);
 .burhan-ava {
     position: absolute;
     top: 124px;
-    left: 2px;
+    left: 11px;
 }
 
 .subscribe-text {
     position: absolute;
     top: 124px;
-    left: 100px;
+    left: 111px;
 } 
     
 .Vestibulum {
@@ -1133,8 +1137,16 @@ filter: brightness(50%);
     height: inherit;
 }
 .catalogTree {
-    height: 148px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-1600 {
+    display: flex;
     background-color: #f8f3f4;
+    height: 148px;
+    min-width: 420px;
+    width: 1600px;
 }
 
 .catalogTree-items {
