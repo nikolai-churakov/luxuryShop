@@ -1698,3 +1698,20 @@ filter: brightness(50%);
     text-align: center;
     line-height: 44px;
 }
+
+.ui-slider-horizontal {
+    background-color: #f0f0f0;
+    height: 8px;
+}
+
+.ui-slider-handle {
+    background-color: var(--BrandPink);
+    top: -6px;
+    border-radius: 50%;
+    height: 6px;
+    width: 6px;
+}
+
+.ui-slider-range {
+    background-color: var(--BrandPink);
+}   
