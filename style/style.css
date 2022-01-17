@@ -961,7 +961,7 @@ filter: brightness(50%);
     border: 1px solid #e6e6e6;
     background-color: #ffffff;
     top: 42px;
-    left: 165px;
+    left: 255px;
     transition: all .3s;
     display: flex;
     z-index: 1;
