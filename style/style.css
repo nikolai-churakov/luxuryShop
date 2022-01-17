@@ -180,6 +180,8 @@
 
 .dropdown-menu li a:hover {
     color: var(--BrandPink);
+    border-bottom: 3px solid var(--BrandPink);
+    padding-bottom: 16px;
 }
 
 .browse-menu-caption {
