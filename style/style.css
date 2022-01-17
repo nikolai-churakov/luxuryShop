@@ -284,9 +284,10 @@
 
 .the-brand {
     color: #222222;
-    font-size: 70px;
-    font-weight: 700;
+    font-size: 60px;
+    font-family: "Lato black", sans-serif;
     text-transform: uppercase;
+    letter-spacing: 1.5px;
     line-height: 45px;
     margin-bottom: 20px;
 }
