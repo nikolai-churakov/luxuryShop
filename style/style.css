@@ -268,6 +268,8 @@
 
 .menu li a:hover {
     color: var(--BrandPink);
+    border-bottom: 3px solid var(--BrandPink);
+    padding-bottom: 14px;
 }
 
 .banner-block {
@@ -282,9 +284,10 @@
 
 .the-brand {
     color: #222222;
-    font-size: 70px;
-    font-weight: 700;
+    font-size: 60px;
+    font-family: "Lato black", sans-serif;
     text-transform: uppercase;
+    letter-spacing: 1.5px;
     line-height: 45px;
     margin-bottom: 20px;
 }
@@ -958,7 +961,7 @@ filter: brightness(50%);
     border: 1px solid #e6e6e6;
     background-color: #ffffff;
     top: 42px;
-    left: 165px;
+    left: 255px;
     transition: all .3s;
     display: flex;
     z-index: 1;
@@ -1114,12 +1117,36 @@ filter: brightness(50%);
     color: var(--BrandPink);
 }
 
-.priduct-in-basket {
+.product-in-basket {
     width: 230px;
     height: 115px;
     margin: 10px 0px;
-    background-color: mediumseagreen
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e8e8e8;
 }
+.basket-product-box {
+    height: 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.basket-product-box-name {
+    color: #222222;
+    font-size: 12px;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.basket-product-box-price {
+    color: var(--BrandPink);
+    font-family: Lato;
+    font-size: 12px;
+}
+
 
 .box-offer-products {
     display: flex;
