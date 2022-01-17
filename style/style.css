@@ -1126,9 +1126,10 @@ filter: brightness(50%);
     border-bottom: 1px solid #e8e8e8;
 }
 .basket-product-box {
+    height: 85px;
     display: flex;
-    justify-content:center;
     flex-direction: column;
+    justify-content:space-around;
     align-items: center;
 }
 
