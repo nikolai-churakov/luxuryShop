@@ -8,27 +8,28 @@
     <title>THE BRAND OF LUXERIOUS FASHION</title>
     <link rel="stylesheet" href="ui/jquery-ui.css">
     <link rel="stylesheet" href="style/style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="ui/jquery-ui.js"></script>
     <script>
-    $( function() {
-      $( "#slider-range" ).slider({
-        range: true,
-        min: 0,
-        max: 900,
-        values: [ 10, 300 ],
-        slide: function( event, ui ) {
-          $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-        }
-      });
-      $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-        " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-    } );
+        $(function () {
+            $("#slider-range").slider({
+                range: true,
+                min: 0,
+                max: 900,
+                values: [10, 300],
+                slide: function (event, ui) {
+                    $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+                }
+            });
+            $("#amount").val("$" + $("#slider-range").slider("values", 0) +
+                " - $" + $("#slider-range").slider("values", 1));
+        });
     </script>
 </head>
 
 <body>
-    
+
     <header class=header>
         <div class="container header-flex">
             <div class="header-left">
@@ -64,10 +65,8 @@
                     </div>
                     <input class="form-search" type="text" placeholder="  Search for Item...">
                     <button class="dropSearch"><img src="img/psd-search.png" alt="psd-search"></button>
-
                 </form>
             </div>
-
             <div class="header-right">
                 <div class="circle">2</div>
                 <div class="container-basket-fastInfo">
@@ -87,7 +86,7 @@
                             <a class="basket-fastInfo-box-button" href="#">Checkout</a>
                             <a class="basket-fastInfo-box-button" href="#">Go to cart</a>
                         </div>
-                    </div> 
+                    </div>
                 </div>
                 <a class="button-site my-account-button" href="#">My Account</a>
             </div>
@@ -157,9 +156,9 @@
 
     <div class="catalogTree">
         <div class="container-1600">
-            <div   div class="container catalogTree-items">
+            <div div class="container catalogTree-items">
                 <div class="catalogTree-left">
-                    New Arrivals 
+                    New Arrivals
                 </div>
                 <div class="catalogTree-right">
                     <p class="catalogTree-right-p">
@@ -168,66 +167,66 @@
                         <a class="catalogTree-right-span" href="product.html">Men</a>
                         /
                         <a class="catalogTree-right-span" href="#">New Arrivals</a>
-                    </p>                  
+                    </p>
                 </div>
             </div>
-        </div>                
+        </div>
     </div>
 
     <main class="container product-main">
         <nav class="sidebar">
             <details class="details">
-                <summary class="category">Category</summary> 
+                <summary class="category">Category</summary>
                 <ul class="details-ul">
-                    <li><a class="details-li" href="#">Accessories</a></li>    
-                    <li><a class="details-li" href="#">Bags</a></li>    
-                    <li><a class="details-li" href="#">Denim</a></li>    
-                    <li><a class="details-li" href="#">Hoodies & Sweatshirts</a></li>    
-                    <li><a class="details-li" href="#">Jackets & Coats</a></li>    
-                    <li><a class="details-li" href="#">Pants</a></li>    
-                    <li><a class="details-li" href="#">Polos</a></li>    
-                    <li><a class="details-li" href="#">Shirts</a></li>    
-                    <li><a class="details-li" href="#">Shoes</a></li>    
-                    <li><a class="details-li" href="#">Shorts</a></li>    
-                    <li><a class="details-li" href="#">Sweaters & Knits</a></li>    
-                    <li><a class="details-li" href="#">T-Shirts</a></li>    
-                    <li><a class="details-li" href="#">Tanks</a></li>   
+                    <li><a class="details-li" href="#">Accessories</a></li>
+                    <li><a class="details-li" href="#">Bags</a></li>
+                    <li><a class="details-li" href="#">Denim</a></li>
+                    <li><a class="details-li" href="#">Hoodies & Sweatshirts</a></li>
+                    <li><a class="details-li" href="#">Jackets & Coats</a></li>
+                    <li><a class="details-li" href="#">Pants</a></li>
+                    <li><a class="details-li" href="#">Polos</a></li>
+                    <li><a class="details-li" href="#">Shirts</a></li>
+                    <li><a class="details-li" href="#">Shoes</a></li>
+                    <li><a class="details-li" href="#">Shorts</a></li>
+                    <li><a class="details-li" href="#">Sweaters & Knits</a></li>
+                    <li><a class="details-li" href="#">T-Shirts</a></li>
+                    <li><a class="details-li" href="#">Tanks</a></li>
                 </ul>
             </details>
             <details class="details">
-                <summary class="category">Brand</summary> 
+                <summary class="category">Brand</summary>
                 <ul class="details-ul">
-                    <li><a class="details-li" href="#">Accessories</a></li>    
-                    <li><a class="details-li" href="#">Bags</a></li>    
-                    <li><a class="details-li" href="#">Denim</a></li>    
-                    <li><a class="details-li" href="#">Hoodies & Sweatshirts</a></li>    
-                    <li><a class="details-li" href="#">Jackets & Coats</a></li>    
-                    <li><a class="details-li" href="#">Pants</a></li>    
-                    <li><a class="details-li" href="#">Polos</a></li>    
-                    <li><a class="details-li" href="#">Shirts</a></li>    
-                    <li><a class="details-li" href="#">Shoes</a></li>    
-                    <li><a class="details-li" href="#">Shorts</a></li>    
-                    <li><a class="details-li" href="#">Sweaters & Knits</a></li>    
-                    <li><a class="details-li" href="#">T-Shirts</a></li>    
-                    <li><a class="details-li" href="#">Tanks</a></li>   
+                    <li><a class="details-li" href="#">Accessories</a></li>
+                    <li><a class="details-li" href="#">Bags</a></li>
+                    <li><a class="details-li" href="#">Denim</a></li>
+                    <li><a class="details-li" href="#">Hoodies & Sweatshirts</a></li>
+                    <li><a class="details-li" href="#">Jackets & Coats</a></li>
+                    <li><a class="details-li" href="#">Pants</a></li>
+                    <li><a class="details-li" href="#">Polos</a></li>
+                    <li><a class="details-li" href="#">Shirts</a></li>
+                    <li><a class="details-li" href="#">Shoes</a></li>
+                    <li><a class="details-li" href="#">Shorts</a></li>
+                    <li><a class="details-li" href="#">Sweaters & Knits</a></li>
+                    <li><a class="details-li" href="#">T-Shirts</a></li>
+                    <li><a class="details-li" href="#">Tanks</a></li>
                 </ul>
             </details>
             <details class="details">
-                <summary class="category">Designer</summary> 
+                <summary class="category">Designer</summary>
                 <ul class="details-ul">
-                    <li><a class="details-li" href="#">Accessories</a></li>    
-                    <li><a class="details-li" href="#">Bags</a></li>    
-                    <li><a class="details-li" href="#">Denim</a></li>    
-                    <li><a class="details-li" href="#">Hoodies & Sweatshirts</a></li>    
-                    <li><a class="details-li" href="#">Jackets & Coats</a></li>    
-                    <li><a class="details-li" href="#">Pants</a></li>    
-                    <li><a class="details-li" href="#">Polos</a></li>    
-                    <li><a class="details-li" href="#">Shirts</a></li>    
-                    <li><a class="details-li" href="#">Shoes</a></li>    
-                    <li><a class="details-li" href="#">Shorts</a></li>    
-                    <li><a class="details-li" href="#">Sweaters & Knits</a></li>    
-                    <li><a class="details-li" href="#">T-Shirts</a></li>    
-                    <li><a class="details-li" href="#">Tanks</a></li>   
+                    <li><a class="details-li" href="#">Accessories</a></li>
+                    <li><a class="details-li" href="#">Bags</a></li>
+                    <li><a class="details-li" href="#">Denim</a></li>
+                    <li><a class="details-li" href="#">Hoodies & Sweatshirts</a></li>
+                    <li><a class="details-li" href="#">Jackets & Coats</a></li>
+                    <li><a class="details-li" href="#">Pants</a></li>
+                    <li><a class="details-li" href="#">Polos</a></li>
+                    <li><a class="details-li" href="#">Shirts</a></li>
+                    <li><a class="details-li" href="#">Shoes</a></li>
+                    <li><a class="details-li" href="#">Shorts</a></li>
+                    <li><a class="details-li" href="#">Sweaters & Knits</a></li>
+                    <li><a class="details-li" href="#">T-Shirts</a></li>
+                    <li><a class="details-li" href="#">Tanks</a></li>
                 </ul>
             </details>
         </nav>
@@ -238,19 +237,19 @@
                         <p class="top-filter-text">Trending now</p>
                         <p class="bohemia">
                             <span class="bohemia-span"><a class="bohemia-text" href="#">Bohemian</a></span>
-                            <span class="bohemia-line">|</span>   
+                            <span class="bohemia-line">|</span>
                             <span class="bohemia-span"><a class="bohemia-text" href="#">Floral</a></span>
-                            <span class="bohemia-line">|</span>    
-                            <span class="bohemia-span"><a class="bohemia-text" href="#">Lace</a></span> 
-                            <span class="bohemia-span"><a class="bohemia-text" href="#">Floral</a></span> 
-                            <span class="bohemia-line">|</span>   
+                            <span class="bohemia-line">|</span>
                             <span class="bohemia-span"><a class="bohemia-text" href="#">Lace</a></span>
-                            <span class="bohemia-line">|</span>   
+                            <span class="bohemia-span"><a class="bohemia-text" href="#">Floral</a></span>
+                            <span class="bohemia-line">|</span>
+                            <span class="bohemia-span"><a class="bohemia-text" href="#">Lace</a></span>
+                            <span class="bohemia-line">|</span>
                             <span class="bohemia-span"><a class="bohemia-text" href="#">Bohemian</a></span>
                         </p>
                     </div>
                     <div class="top-filter-size">
-                        <p class="top-filter-text">Size</p>                            
+                        <p class="top-filter-text">Size</p>
                         <div class="fieldset">
                             <input class="input" id="XXS" type="checkbox">
                             <label class="fieldset-label" for="XXS">XXS</label>
@@ -272,10 +271,10 @@
                         <p class="top-filter-text">Price</p>
                         <br>
                         <input type="text" id="amount" readonly style="border:0; color: #6f6e6e;; font-weight:lighter;">
-                        <br>  <br>
+                        <br> <br>
 
-                        <div id="slider-range"></div>                        
-                    </div>                     
+                        <div id="slider-range"></div>
+                    </div>
                 </div>
                 <div class="top-filter-sort">
                     <div class="sortby">
@@ -295,16 +294,16 @@
                         </a>
                     </div>
                 </div>
-            </div>            
+            </div>
             <div class="product-items">
                 <div class="product-items-container">
-                </div>               
+                </div>
             </div>
             <div class="pagination">
                 <nav class="pagination-nav">
                     <a class="pagination-nav-text" href="#">
                         <i class="fas fa-angle-left pagination-nav-i"></i>
-                    </a>                
+                    </a>
                     <a class="pagination-nav-text" href="#">1</a>
                     <a class="pagination-nav-text" href="#">2</a>
                     <a class="pagination-nav-text" href="#">3</a>
@@ -313,173 +312,165 @@
                     <a class="pagination-nav-text" href="#">6.....20</a>
                     <a class="pagination-nav-text" href="#">
                         <i class="fas fa-angle-right pagination-nav-i"></i>
-                    </a>                     
+                    </a>
                 </nav>
                 <a class="pagination-buttom" href="#">
-                    <p class="pagination-buttom-text">View All</p> 
-                </a>              
-            </div>        
+                    <p class="pagination-buttom-text">View All</p>
+                </a>
+            </div>
         </div>
     </main>
-    
+
     <div class="container">
         <div class="fastThingBuy">
-
-                <div class="productWrap">
-                    <a class="no-decoration" href="index.html">
-                        <img class="productImg" src="img/indexThing/1.png" alt="indexThing1">
-                        <div class="nameAndPriceWrap">
-                            <div class="productName">
-                                Mango People T-shirt
-                            </div>
-                            <div class="productPriceWrap">
-                                <div class="actualPrice">
-                                    &euro;&nbsp;52.00
-                                </div>
+            <div class="productWrap">
+                <a class="no-decoration" href="index.html">
+                    <img class="productImg" src="img/indexThing/1.png" alt="indexThing1">
+                    <div class="nameAndPriceWrap">
+                        <div class="productName">
+                            Mango People T-shirt
+                        </div>
+                        <div class="productPriceWrap">
+                            <div class="actualPrice">
+                                &euro;&nbsp;52.00
                             </div>
                         </div>
-                    </a>
-                    <div class="box-add">
-                        <a class="add" href=""><img class="basket1" src="img/basket1.svg" alt="">Add to Card</a>
                     </div>
+                </a>
+                <div class="box-add">
+                    <a class="add" href=""><img class="basket1" src="img/basket1.svg" alt="">Add to Card</a>
                 </div>
-
+            </div>
             <div class="productWrap">
-                <a href="index.html">
+                <a class="no-decoration" href="index.html">
                     <img class="productImg" src="img/indexThing/2.png" alt="indexThing1">
-                </a>
-                <div class="nameAndPriceWrap">
-                    <div class="productName">
-                        Mango People T-shirt
-                    </div>
-                    <div class="productPriceWrap">
-                        <div class="actualPrice">
-                            &euro;&nbsp;72.00
+                    <div class="nameAndPriceWrap">
+                        <div class="productName">
+                            Mango People T-shirt
+                        </div>
+                        <div class="productPriceWrap">
+                            <div class="actualPrice">
+                                &euro;&nbsp;72.00
+                            </div>
                         </div>
                     </div>
-                    <div class="box-add">
-                        <a class="add" href=""><img class="basket1" src="img/basket1.svg" alt="">Add to Card</a>
-                    </div>
+                </a>
+                <div class="box-add">
+                    <a class="add" href=""><img class="basket1" src="img/basket1.svg" alt="">Add to Card</a>
                 </div>
             </div>
-
             <div class="productWrap">
-                <a href="index.html">
+                <a class="no-decoration" href="index.html">
                     <img class="productImg" src="img/indexThing/3.png" alt="indexThing1">
-                </a>
-                <div class="nameAndPriceWrap">
-                    <div class="productName">
-                        Mango People T-shirt
-                    </div>
-                    <div class="productPriceWrap">
-                        <div class="actualPrice">
-                            &euro;&nbsp;62.00
+                    <div class="nameAndPriceWrap">
+                        <div class="productName">
+                            Mango People T-shirt
+                        </div>
+                        <div class="productPriceWrap">
+                            <div class="actualPrice">
+                                &euro;&nbsp;62.00
+                            </div>
                         </div>
                     </div>
-                    <div class="box-add">
-                        <a class="add" href=""><img class="basket1" src="img/basket1.svg" alt="">Add to Card</a>
-                    </div>
+                </a>
+                <div class="box-add">
+                    <a class="add" href=""><img class="basket1" src="img/basket1.svg" alt="">Add to Card</a>
                 </div>
             </div>
-
             <div class="productWrap">
-                <a href="index.html">
+                <a class="no-decoration" href="index.html">
                     <img class="productImg" src="img/indexThing/4.png" alt="indexThing1">
-                </a>
-                <div class="nameAndPriceWrap">
-                    <div class="productName">
-                        Mango People T-shirt
-                    </div>
-                    <div class="productPriceWrap">
-                        <div class="actualPrice">
-                            &euro;&nbsp;599.00
+                    <div class="nameAndPriceWrap">
+                        <div class="productName">
+                            Mango People T-shirt
+                        </div>
+                        <div class="productPriceWrap">
+                            <div class="actualPrice">
+                                &euro;&nbsp;599.00
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
                 <div class="box-add">
                     <a class="add" href=""><img class="basket1" src="img/basket1.svg" alt="">Add to Card</a>
                 </div>
             </div>
-
             <div class="productWrap">
-                <a href="index.html">
+                <a class="no-decoration" href="index.html">
                     <img class="productImg" src="img/indexThing/5.png" alt="indexThing1">
-                </a>
-                <div class="nameAndPriceWrap">
-                    <div class="productName">
-                        Mango People T-shirt
-                    </div>
-                    <div class="productPriceWrap">
-                        <div class="actualPrice">
-                            &euro;&nbsp;53.00
+                    <div class="nameAndPriceWrap">
+                        <div class="productName">
+                            Mango People T-shirt
+                        </div>
+                        <div class="productPriceWrap">
+                            <div class="actualPrice">
+                                &euro;&nbsp;53.00
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
                 <div class="box-add">
                     <a class="add" href=""><img class="basket1" src="img/basket1.svg" alt="">Add to Card</a>
                 </div>
             </div>
 
             <div class="productWrap">
-                <a href="index.html">
+                <a class="no-decoration" href="index.html">
                     <img class="productImg" src="img/indexThing/6.png" alt="indexThing1">
-                </a>
-                <div class="nameAndPriceWrap">
-                    <div class="productName">
-                        Mango People T-shirt
-                    </div>
-                    <div class="productPriceWrap">
-                        <div class="actualPrice">
-                            &euro;&nbsp;58.00
+                    <div class="nameAndPriceWrap">
+                        <div class="productName">
+                            Mango People T-shirt
+                        </div>
+                        <div class="productPriceWrap">
+                            <div class="actualPrice">
+                                &euro;&nbsp;58.00
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
                 <div class="box-add">
                     <a class="add" href=""><img class="basket1" src="img/basket1.svg" alt="">Add to Card</a>
                 </div>
             </div>
-
             <div class="productWrap">
-                <a href="index.html">
+                <a class="no-decoration" href="index.html">
                     <img class="productImg" src="img/indexThing/7.png" alt="indexThing1">
-                </a>
-                <div class="nameAndPriceWrap">
-                    <div class="productName">
-                        Mango People T-shirt
-                    </div>
-                    <div class="productPriceWrap">
-                        <div class="actualPrice">
-                            &euro;&nbsp;63.00
+                    <div class="nameAndPriceWrap">
+                        <div class="productName">
+                            Mango People T-shirt
+                        </div>
+                        <div class="productPriceWrap">
+                            <div class="actualPrice">
+                                &euro;&nbsp;63.00
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
                 <div class="box-add">
                     <a class="add" href=""><img class="basket1" src="img/basket1.svg" alt="">Add to Card</a>
                 </div>
             </div>
-
             <div class="productWrap">
-                <a href="index.html">
+                <a class="no-decoration" href="index.html">
                     <img class="productImg" src="img/indexThing/8.png" alt="indexThing1">
-                </a>
-                <div class="nameAndPriceWrap">
-                    <div class="productName">
-                        Mango People T-shirt
-                    </div>
-                    <div class="productPriceWrap">
-                        <div class="actualPrice">
-                            &euro;&nbsp;81.00
+                    <div class="nameAndPriceWrap">
+                        <div class="productName">
+                            Mango People T-shirt
+                        </div>
+                        <div class="productPriceWrap">
+                            <div class="actualPrice">
+                                &euro;&nbsp;81.00
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
                 <div class="box-add">
                     <a class="add" href=""><img class="basket1" src="img/basket1.svg" alt="">Add to Card</a>
                 </div>
             </div>
-
         </div>
     </div>
-    
+
     <div class="container-offer">
         <div class="box-offer-products">
             <div class="box-offer-products-center">
@@ -493,7 +484,6 @@
                         </p>
                     </div>
                 </div>
-
                 <div class="box-offer-products-percent">
                     <img class="percent-pr" src="img/Рercentages.svg" alt="%">
                     <div class="offer-percent-pr">
@@ -504,7 +494,6 @@
                         </p>
                     </div>
                 </div>
-
                 <div class="box-offer-products-crown">
                     <img class="crown-pr" src="img/Сrown.svg" alt="Crown">
                     <div class="offer-crown-pr">
@@ -515,7 +504,7 @@
                         </p>
                     </div>
                 </div>
-            </div>  
+            </div>
         </div>
     </div>
 
@@ -535,7 +524,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="subscribe-container-right">
                 <div class="subscribe-text-right">
                     <p class="sub">SUBSCRIBLE</p>
@@ -614,5 +602,4 @@
         </div>
     </footer>
 </body>
-
 </html>
