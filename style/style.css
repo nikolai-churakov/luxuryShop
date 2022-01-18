@@ -7,6 +7,7 @@
     font-family: "Lato regular";
     src: url(../fonts/Lato_regular.ttf);
 }
+
 @font-face {
     font-family: "Lato bolt"; 
     src: url(../fonts/Lato_bolt.ttf);
@@ -248,7 +249,6 @@
     color: var(--BrandPink);
 }
 
-
 .menu {
     display: flex;
     list-style-type: none;
@@ -291,7 +291,6 @@
     line-height: 45px;
     margin-bottom: 20px;
 }
-
 
 .text-fashion {
     color: #222222;
@@ -1050,7 +1049,6 @@ filter: brightness(50%);
     transition-property: opacity, visibility;
     transition-duration: 0.2s;
     transition-delay: 0.15s;
-    
 }
 
 .container-basket-fastInfo:hover .basket-fastInfo {
@@ -1414,33 +1412,6 @@ filter: brightness(50%);
     background: var(--BrandPink);
 }
 
-.top-filter-price-input {
-    -webkit-appearance: none;
-    width: 262px;
-    height: 6px;
-    border-radius: 3px;
-    background-color: #f0f0f0;
-    outline: none;
-    position: relative;
-    margin-top: 20px;
-}
-
-.top-filter-price-input::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 14px;
-    height: 14px;
-    background-color: #f16d7f;
-    border-radius: 10px;
-}
-
-.top-filter-price-input-text {
-    font-size: 14px;
-    font-family: "OpenSans", sans-serif;
-    font-weight: 400;
-    margin-top: 16px;
-    color: #6f6e6e;
-}
-
 .top-filter-sort {
     height: 50px;
     background-color: #f3f3f3;
@@ -1741,4 +1712,4 @@ filter: brightness(50%);
 
 .ui-slider-range {
     background-color: var(--BrandPink);
-}   
+}
