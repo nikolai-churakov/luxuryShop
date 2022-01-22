@@ -2224,19 +2224,19 @@ filter: brightness(50%);
 }
 
 .shopping-card-product-box-name {
-color: #222222;
-font-family: Lato;
-font-weight: 400;
-text-transform: uppercase;
-margin-bottom: 20px;
+    color: #222222;
+    font-family: Lato;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .product-color-box-name {
-color: #6f6e6e;
-font-family: "Lato regular", sans-serif;
-font-weight: 600;
-line-height: 20px;
-font-size: 14px;
+    color: #6f6e6e;
+    font-family: "Lato regular", sans-serif;
+    font-weight: 600;
+    line-height: 20px;
+    font-size: 14px;
 }
 
 .product-color-box-color {
