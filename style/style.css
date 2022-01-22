@@ -2203,10 +2203,10 @@ filter: brightness(50%);
 }
 
 .chopping-cart-box {
-    margin: 20px 0px;
+    padding: 20px 0px;
     display: flex;
     position: relative;
-
+    border-bottom: 2px solid #eaeaea;
 }
 .shopping-total-img {
     width: 100px;
@@ -2218,9 +2218,8 @@ filter: brightness(50%);
     justify-content: space-around;
     flex-direction: column;
     align-items: start;
-    width: 500px;
+    width: 385px;
     margin-left: 20px;
-    margin-right: 50px;
     color: #656565;
 }
 
@@ -2251,7 +2250,7 @@ font-size: 14px;
     justify-content: center;
     align-items: center;
     width: 100px;
-    margin-right: 72px;
+    margin-right: 68px;
 }
 
 .chopping-card-product-box-number-item {
@@ -2259,13 +2258,13 @@ font-size: 14px;
     justify-content: center;
     align-items: center;
     width: 100px;
-    margin-right: 72px;
     box-sizing: border-box;
+    margin-right: 40px;
 }
 
 .chopping-card-product-box-number-item-input {
-    width: 54px;
-    height: 30px;
+    width: 52px;
+    height: 28px;
     border: 1px solid #eaeaea;
     background-color: #ffffff;
 }
@@ -2285,12 +2284,13 @@ font-size: 14px;
 
 .chopping-card-product-box-price-subtotal {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;  
     width: 100px;
-    margin-right: 72px;
     color: #656565;
     font-size: 13px;
+    margin-left: 8px;
+    margin-right: 23px;
     font-weight: 400;
     line-height: 20px;
 }
