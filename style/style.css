@@ -2202,29 +2202,28 @@ filter: brightness(50%);
     background-color: white;
 }
 
-.chopping-cart-box {
-    margin: 20px 0px;
+.shopping-cart-box {
+    padding: 20px 0px;
     display: flex;
     position: relative;
-
+    border-bottom: 2px solid #eaeaea;
 }
 .shopping-total-img {
     width: 100px;
     height: 115px;
 }
 
-.chopping-card-product-box {
+.shopping-card-product-box {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     align-items: start;
-    width: 500px;
+    width: 385px;
     margin-left: 20px;
-    margin-right: 50px;
     color: #656565;
 }
 
-.chopping-card-product-box-name {
+.shopping-card-product-box-name {
 color: #222222;
 font-family: Lato;
 font-weight: 400;
@@ -2246,31 +2245,31 @@ font-size: 14px;
     font-size: 13px;
 }
 
-.chopping-card-product-box-price {
+.shopping-card-product-box-price {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100px;
-    margin-right: 72px;
+    margin-right: 68px;
 }
 
-.chopping-card-product-box-number-item {
+.shopping-card-product-box-number-item {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100px;
-    margin-right: 72px;
     box-sizing: border-box;
+    margin-right: 40px;
 }
 
-.chopping-card-product-box-number-item-input {
-    width: 54px;
-    height: 30px;
+.shopping-card-product-box-number-item-input {
+    width: 52px;
+    height: 28px;
     border: 1px solid #eaeaea;
     background-color: #ffffff;
 }
 
-.chopping-card-product-box-shipping {
+.shopping-card-product-box-shipping {
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -2283,19 +2282,20 @@ font-size: 14px;
     text-transform: uppercase;
 }
 
-.chopping-card-product-box-price-subtotal {
+.shopping-card-product-box-price-subtotal {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;  
     width: 100px;
-    margin-right: 72px;
     color: #656565;
     font-size: 13px;
+    margin-left: 8px;
+    margin-right: 23px;
     font-weight: 400;
     line-height: 20px;
 }
 
-.chopping-card-product-box-remove {
+.shopping-card-product-box-remove {
     display: flex;
     justify-content: center;
     align-items: center;  
