@@ -1663,6 +1663,15 @@ filter: brightness(50%);
     text-decoration: none;
 }
 
+.pagination-nav-text-cursor {
+    font-size: 16px;
+    font-weight: bold;
+    color: #c4c4c4;
+    text-decoration: none;
+    cursor: default;
+}
+
+
 .pagination-nav-text:hover {
     color: var(--BrandPink);
 }
