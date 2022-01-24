@@ -2270,10 +2270,11 @@ filter: brightness(50%);
 }
 
 .shopping-card-product-box-number-item-input {
-    width: 52px;
+    width: 32px;
     height: 28px;
     border: 1px solid #eaeaea;
     background-color: #ffffff;
+    padding-left: 20px
 }
 
 .shopping-card-product-box-shipping {
